@@ -1,11 +1,11 @@
-# Informações de Docker
+# How-to-use Docker in Mac
 
-##Link Úteis
+##Links
 
-###Download e Instalação
+###Download / Install
 https://docs.docker.com/docker-for-mac/
 
-###Imagens públicas
+###Public Images
 https://hub.docker.com/explore/
 
 ##Containers
@@ -20,7 +20,7 @@ docker run --name postgresdb -e POSTGRES_PASSWORD=123456 -p 15432:5432 -d postgr
 ```
 
 Criar container com acesso a volume externo 
-(Parametro -v -> PastaHostFisico:PastaContainer)
+_(Parametro -v -> PastaHostFisico:PastaContainer)_
 ```
 docker run --name dbExterno -e POSTGRES_PASSWORD=123456 -p 12451:5432 -v /Users/romuloscampini/Development/Touch/docker-share:/tmp/ -d postgres:9.4
 ```
